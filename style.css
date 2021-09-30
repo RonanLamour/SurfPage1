@@ -1,0 +1,71 @@
+.jumbotron-hero {
+  /* Choisis la hauteur ici */
+  height: 500px;
+
+  /* Tu lui donnes une image de background */
+  background-image: url("SurfHeader.jpg");
+
+  /* Centre l'image et la met bien sur tous les écrans */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body, html {
+    height: 100%;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .bg-image {
+    /* The image used */
+    background-image: url("SurfHeader.jpg");
+  
+    /* Add the blur effect */
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  /* Position text in the middle of the page/image */
+  .bg-text {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .fond {
+    background: url('SurfHeader.jpg') no-repeat center center;
+    position: fixed; /* Le fond est fixé en haut de la page */
+    width: 100%; /* Il occupe toute la largeur de l'écran */
+    height: 300px; /* On met ici la même hauteur que le jumbotron */
+    top:0;
+    left:0;
+    z-index: -1;
+   }
+   .jumbotron {
+    margin-bottom: 0px;
+    height: 300px;
+    color: white; /* Le texte sera affiché en blanc */
+    text-shadow: black 0.3em 0.3em 0.3em;
+    background:transparent;
+   }
